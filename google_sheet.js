@@ -148,7 +148,7 @@ const processToWorksheet = async (dataArray, sheetName) => {
     dataArray.forEach(row => {
         const toAddElement = { ...row };
 
-        // check datatype - we cannot have arrays
+        // check datatype - we cannot have arrays or objects
         Object.keys(toAddElement).forEach(key => {
             if (Array.isArray(toAddElement[key])) {
                 toAddElement[key] = JSON.stringify(toAddElement[key])

@@ -1,7 +1,5 @@
 # Bubble to google sheet
-Code I used in a project to copy Bubble database code into a Google sheet using node. Everytime you run it, it appends a snapshot 
-to the sheet, with a timestamp.
-
+Quick and fairly ok code I used in a project to copy Bubble database code into a Google sheet using node. Everytime you run it, it appends a snapshot to the sheet, with a timestamp.
 
 ## Setup
 Google Cloud credentials are stored in a json you get when setting up the gcloud service account in order to enable the Sheet API.
@@ -77,3 +75,8 @@ node google_sheet.js dry
 Dry does a dry run on the production data.
 
 The nice part of the Google Sheet API in node is that it dynamically adds columns, meaning if you add a column in the sheet, it then gets appended.
+
+## Todo
+- Use different HTTPS handler and make it cleaner async so also output logs and https calls are more sequential
+- Only open worksheet once - now it opens it a few times - not very clean
+- Display columns in worksheet header currently not seen (or new) in the data received. To see differences in db schema
