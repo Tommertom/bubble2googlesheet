@@ -4,7 +4,7 @@ to the sheet, with a timestamp.
 
 
 ## Setup
-Google Cloud credentials are stored in a json you get when setting up the gcloud service account
+Google Cloud credentials are stored in a json you get when setting up the gcloud service account in order to enable the Sheet API.
 
 Something like this:
 
