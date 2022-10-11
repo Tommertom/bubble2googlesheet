@@ -50,18 +50,6 @@ The bubblegoogle.json file should contain something like this:
             "Websiteinfo",
             "Province"
           ]
-    },
-    "prodtotest": {
-        "url": "https://afgdb.estedf.com/api/1.1/obj/",
-        "googleSpreadsheetID": "1JNRasdsdjJonVm2bX-iEnAlE",
-        "token": "a582dfgdgfdgf464382",
-        "tables": [
-            "SMSlogs",
-            "Store",
-            "User",
-            "Websiteinfo",
-            "Province"
-          ]
     }
 }
 ```
