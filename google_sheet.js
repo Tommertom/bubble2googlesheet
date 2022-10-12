@@ -37,7 +37,7 @@ const getDataFromBubbleTable = async (tableName, cursor) => {
                     recordCount[tableName] = count;
                 }
                 if (recordCount[tableName] != undefined) {
-                    recordCount[tableName] = +count;
+                    recordCount[tableName] = recordCount[tableName] + count;
                 }
 
                 await processToWorksheet(arrayLoaded, tableName)
@@ -171,7 +171,7 @@ const processToWorksheet = async (dataArray, sheetName) => {
 }
 
 const doStuff = () => {
-    const listOfTables = environment.tables.sort();
+    const listOfTables = dataToUse.tables.sort();
 
     console.log('Running the process with', dataToUse);
     console.log('-------------------------')
